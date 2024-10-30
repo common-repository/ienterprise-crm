@@ -1,0 +1,114 @@
+/*
+ * General styles
+ */
+.main-center {
+	padding: 2px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.alert {
+		width: inherit;
+	}
+}
+
+.alert {
+	margin-bottom: 0px;
+}
+
+.request-type div {
+	clear: both;
+	overflow: hidden;
+}
+
+.request-type label {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #D1D3D4;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.request-type input[type="checkbox"]:empty {
+	display: none;
+}
+
+.request-type input[type="checkbox"]:empty ~ label {
+	position: relative;
+	line-height: 2.5em;
+	text-indent: 2.25em;
+	margin-top: 1px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.request-type input[type="checkbox"]:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: -0.1px;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+.request-type input[type="checkbox"]:hover:not (:checked ) ~ label {
+	color: #888;
+}
+
+.request-type input[type="checkbox"]:hover:not (:checked ) ~ label:before
+	{
+	content: '\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+.request-type input[type="checkbox"]:checked ~ label {
+	color: #777;
+}
+
+.request-type input[type="checkbox"]:checked ~ label:before {
+	content: '\2714';
+	text-indent: .3em;
+	color: #333;
+	background-color: #ccc;
+}
+
+.request-type input[type="checkbox"]:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+
+.request-type-success input[type="checkbox"]:checked ~ label:before {
+	color: #fff;
+	background-color: #5cb85c;
+}
+
+.form-group {
+	margin-bottom: 0px;
+	margin-top: 3px;
+}
+
+.form-field-label {
+	color: #959595;
+	font-size: 12px;
+	font-weight: 450 !important;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.regpanel {
+	border-style: solid;
+	border-color: #8b8e9a;
+	border-width: 1px 1px 1px 1px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 2px;
+	background-clip: padding-box;
+}
